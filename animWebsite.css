@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+}
+
+.part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+nav h1 {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav h1 i {
+    color: #9ae975;
+}
+
+nav h4 {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Center Section */
+.center {
+    padding: 40px 70px;
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+
+.center-part1 {
+    height: 100%;
+    width: 45%;
+}
+
+.center-part1 h1 {
+    line-height: 1.1;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.center-part1 p {
+    font-size: 16px;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.center-part1 button {
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 16px 28px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.center-part1 button:hover {
+    background-color: #1a1a1a;
+}
+
+.center-part2 {
+    height: 100%;
+    width: 55%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.center-part2 img {
+    height: 90%;
+    width: 85%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.section1bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    margin-top: 10px;
+}
+
+.section1bottom img {
+    height: 35px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+/* Section 2 */
+.section2 {
+    padding-bottom: 100px;
+}
+
+.section2 .services {
+    padding: 60px 70px 30px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.services h3 {
+    background-color: #9ae975;
+    font-size: 32px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.services p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 50%;
+    color: #333;
+}
+
+/* Cards Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Base Card Style */
+.elem {
+    height: 240px;
+    width: calc(50% - 20px);
+    border: 2px solid black;
+    border-radius: 24px;
+    position: relative;
+    box-shadow: 0px 8px 0px black;
+    display: flex;
+    padding: 30px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* Card Number Badge */
+.card-num {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0.2;
+}
+
+.black .card-num {
+    opacity: 0.4;
+}
+
+/* Left Side of Card */
+.elem-part1 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.badge-green {
+    background-color: #eaf3de;
+    color: #3B6D11;
+}
+
+.badge-dark {
+    background-color: #333;
+    color: #9ae975;
+}
+
+.elem-part1 h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Learn More Link */
+.elem-part1 h4 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.elem-part1 h4 i {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.elem-part1 h4:hover i {
+    transform: rotate(45deg);
+}
+
+/* Right Side of Card (Icon Container) */
+.elem-part2 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Custom Icon Styling */
+.card-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon i {
+    font-size: 48px;
+}
+
+.icon-light {
+    background: #eaf3de;
+    color: #4a8518;
+}
+
+.icon-dark {
+    background: #1a1a1a;
+    color: #9ae975;
+}
+
+/* Dark Card Variants */
+.black {
+    background-color: #0b0b0b;
+    color: white;
+    border-color: #1a1a1a;
+    box-shadow: 0px 8px 0px #9ae975;
+}
+
+.black .elem-part1 h4 i {
+    background-color: #9ae975;
+    color: black;
+}
+
+.black .elem-part1 h4 span {
+    color: #ccc;
+}
